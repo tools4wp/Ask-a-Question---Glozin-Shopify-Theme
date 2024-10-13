@@ -1,0 +1,8 @@
+Add Product to Ask Question Form
+
+Insert @ line 87 in ask-question-form.liquid file in Snippets folder
+
+  <!-- Hidden field for product name -->
+  {% if product %}
+    <input type="hidden" name="contact[product_name]" value="{{ product.title }}">
+  {% endif %}
